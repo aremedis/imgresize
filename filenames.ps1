@@ -28,7 +28,7 @@ foreach ($dira in $directories)
         $dirb = $dira.Substring($parent.length);
         add-content -path $txtfile -value "$dirb : `t $file";
 
-        #add-content -path $csvfile -value "$dirb : `t $file";
+        #add-content -path $csvfile -value "$dirb,$file";
     }
 
 }
